@@ -1,0 +1,23 @@
+---
+language: python
+python: "3.6"
+
+# Use the new container infrastructure
+sudo: false
+
+# Install ansible
+addons:
+  apt:
+    packages:
+    - python-pip
+
+install:
+  # Install pycodestyle
+  - pip install pycodestyle
+
+script:
+  # Basic role syntax check
+  - pycodestyle main.py
+
+  # Run the code
+  - python main.py
