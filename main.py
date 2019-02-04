@@ -1,5 +1,6 @@
 import sys
 
+
 def format(func):
     def wrapper(a, expected):
         answer = func(a)

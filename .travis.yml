@@ -20,4 +20,4 @@ script:
   - pycodestyle main.py
 
   # Run the code
-  - python main.py
+  - time python main.py
